@@ -1,0 +1,31 @@
+
+oracleAndGroverOP(n, x)
+
+	n: ビット数
+	x: 検索したい状態のインデックス。
+
+	一回だけ グローバーのアルゴリズムの oracle　と　グローバーオペレーターを実行します。
+
+
+
+
+ogOP(states,n, x)
+
+	states: 状態
+	n: ビット数
+	x: 検索したい状態のインデックス。
+
+
+	機能的には、oracleAndGroverOP(n, x)と同じ。
+	ogOP_times(n,x,t)のためのサブルーチン
+
+
+
+ogOP_times(n,x,t)
+
+	
+	n: ビット数
+	x: 検索したい状態のインデックス。
+	t: グローバーのアルゴリズムの oracle　と　グローバーオペレーターを実行する反復回数
+
+

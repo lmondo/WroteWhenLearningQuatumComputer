@@ -1,0 +1,210 @@
+﻿
+Read me txt	2016/11/06 Sun
+
+
+dlp(p): discrete logarithm program
+
+    素数p未満の正整数g,rに対して網羅的に
+    
+    g^r = x mod p
+    
+    の x を計算します。
+
+
+
+
+attend_dlp(p):
+
+ dlp(p)においてxの値が0からp-1の値を取ったかどうかを出力します。
+
+
+
+
+
+carmichael_test(n) : 
+
+  与えられた整数nがカーマイケル数がどうか判定します。
+
+
+
+
+
+
+
+
+
+
+    
+dlps(g,x,p) :
+
+  素数p未満の正整数g, と与えられた正整数xに対して
+  
+  g^r = x  mod p
+  
+  を満たすrを探します。
+
+
+
+
+
+
+
+fai(n) : オイラー関数 fai
+
+ n未満の正整数に、nと互いに素な数がいくつ含まれるかを計算します。
+
+
+
+
+
+
+
+
+faiGraph(n) : 
+
+
+横軸 n までの 正整数。縦軸はfai(n) のグラフを作成する。
+
+
+
+
+
+
+
+euler_fai(a, n) : 
+
+ 正整数nと互いに素な数aに対して
+
+ a^fai(n) mod n
+
+ を計算します。
+
+
+
+
+
+
+
+frem(a, p): Fermat's little theorem 
+
+  gcd(a,p) = 1となるaと素数pに対して
+  
+　
+　a^(p-1) mod p
+  
+　を計算します。
+
+
+
+
+
+  
+  
+fremFunc(g, p) :
+
+  素数pと素な(pの倍数でない)正整数gに対して
+
+	g^(p-1) mod p
+
+  を
+計算します。
+
+
+
+
+
+
+
+
+power_remFunc(g, r, p) : 
+
+ 素数p未満の正整数g,rに対して ( ただしgcd(g,p) = 1 )
+
+ g^r mod p
+
+ を計算します。
+
+
+
+prFunc(g, r, p) : 
+
+ 素数p未満の正整数g,rに対して
+
+ g^r mod p
+
+ を計算します。
+
+
+
+
+
+power_remFuncWithoutGCD(g, r, p)
+
+ power_remFunc(g, r, p)のGCD＝１のチェックがありません。
+
+
+
+
+
+ferma_number(n) : 
+
+n番目のフェルマー数まで求めます。
+
+
+  
+
+ferma_test(p, t) : Fermat's little theorem 
+
+  素数の可能性があるpに対して、確率的素数判定フェルマーテストをｔ回行います。
+　
+  
+
+
+
+
+
+
+ferma_testMK2(p, t) : Fermat's little theorem 
+
+  フェルマーテストと最大公約数テストを組み合わせたものをｔ回行います。
+
+
+
+
+
+
+
+
+
+rpn(n) : 
+
+
+ 2からn-1までの互いに素な数をランダムに返します。
+
+
+
+
+
+
+sieve(n) : エラトステネスの篩
+
+ prime_num.txtに記録された最後の素数をpとすると
+
+ エラトステネスの篩を利用して p+1 から n+p+1までの数で素数判定し、
+
+　得られた素数はprime_num.txtに新たに記録されます。
+
+　prime_num sample .txt はこの方法で計算された素数の例です。
+
+
+
+
+
+
+
+
+
+
+
+
+
